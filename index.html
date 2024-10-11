@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pyramid Slide</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <div id="title">
+        <h1>Pyramid Slide</h1>
+    </div>
+
+    <div id="main-content">
+        <div id="slider">
+            <label for="height">How High Do You Want To Build Your Pyramid?</label>
+            <br><br>
+            <label>Your Pyramid Slide Currently Has</label>
+            <br>
+            <span id="sliderValue">0</span> 
+            <br>
+            <label>Bricks</label>
+            <input type="range" id="height" class="slider" min="0" max="100" value="0" />
+        </div>
+
+        <div id="characters">
+            <label for="char">Choose Your Symbol For The Brick(s):</label>
+            <select id="char">
+                <option value="#">#</option>
+                <option value="*">*</option>
+                <option value="&">&</option>
+                <option value="$">$</option>
+                <option value="@">@</option>
+                <option value="+">+</option>
+                <option value="%">%</option>
+            </select>
+        </div>
+
+        <button id="generate">Build The Pyramid!</button>
+
+        <pre id="pyramid"></pre>
+    </div>
+    <script src="mario.js" defer></script>
+</body>
+</html>
